@@ -1,4 +1,5 @@
 import SearchBar from "./component/searchBar"
+import Tab from "./component/Tab"
 
 
 const App = () => {
@@ -9,6 +10,8 @@ const App = () => {
     <div className="h-screen w-full text-white bg-gray-950">
 
     <SearchBar />
+
+    <Tab />
 
     </div>
   )
