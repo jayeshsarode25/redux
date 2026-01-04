@@ -1,3 +1,4 @@
+import ResultGrid from "./component/ResultGrid"
 import SearchBar from "./component/searchBar"
 import Tab from "./component/Tab"
 
@@ -12,6 +13,8 @@ const App = () => {
     <SearchBar />
 
     <Tab />
+
+    <ResultGrid />
 
     </div>
   )
