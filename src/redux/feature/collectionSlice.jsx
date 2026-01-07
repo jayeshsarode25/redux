@@ -38,11 +38,29 @@ const collectionSlice = createSlice({
         theme: "dark",
         transition: Zoom,
       });
+      removeToast: (state, action) => {
+        toast.error("Removed from Collection", {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Zoom,
+        });
+      };
     },
   },
 });
 
-export const { addCollection, removeCollection, clearCollection, addToToast } =
-  collectionSlice.actions;
+export const {
+  addCollection,
+  removeCollection,
+  clearCollection,
+  addToToast,
+  removeToast,
+} = collectionSlice.actions;
 
 export default collectionSlice.reducer;
